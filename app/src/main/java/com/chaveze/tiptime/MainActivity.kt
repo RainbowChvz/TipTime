@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
         updateTip( tip )
     }
 
-    fun updateTip(tip: Double) {
+    private fun updateTip(tip: Double) {
         val formattedTip = NumberFormat.getCurrencyInstance().format(tip)
         binding.tipResult.text = getString(R.string.tip_amount, formattedTip)
     }
