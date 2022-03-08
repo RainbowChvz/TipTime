@@ -50,7 +50,8 @@
         android:layout_marginStart="16dp"
         android:text="@string/how_was_the_service"
         app:layout_constraintStart_toEndOf="@id/icon_service_question"
-        app:layout_constraintTop_toBottomOf="@id/cost_of_service" />
+        app:layout_constraintTop_toBottomOf="@id/cost_of_service"
+        style="@style/Widget.TipTime.TextView" />
 
     <RadioGroup
         android:id="@+id/tip_options"
@@ -65,19 +66,22 @@
             android:id="@+id/option_twenty_percent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/amazing_service" />
+            android:text="@string/amazing_service"
+            style="@style/Widget.TipTime.CompoundButton.RadioButton" />
 
         <RadioButton
             android:id="@+id/option_eighteen_percent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/good_service" />
+            android:text="@string/good_service"
+            style="@style/Widget.TipTime.CompoundButton.RadioButton" />
 
         <RadioButton
             android:id="@+id/option_fifteen_percent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/ok_service" />
+            android:text="@string/ok_service"
+            style="@style/Widget.TipTime.CompoundButton.RadioButton" />
     </RadioGroup>
 
     <ImageView
@@ -99,7 +103,8 @@
         android:text="@string/round_up_tip"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/icon_round_up"
-        app:layout_constraintTop_toBottomOf="@id/tip_options" />
+        app:layout_constraintTop_toBottomOf="@id/tip_options"
+        style="@style/Widget.TipTime.CompoundButton.Switch" />
 
     <Button
         android:id="@+id/calculate_button"
@@ -118,6 +123,7 @@
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/calculate_button"
-        tools:text="Tip Amount: $10" />
+        tools:text="Tip Amount: $10"
+        style="@style/Widget.TipTime.TextView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
