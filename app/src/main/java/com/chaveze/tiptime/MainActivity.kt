@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
         val cost = stringInTextField.toDoubleOrNull()
 
         if (cost == null) {
-            updateTip( 0.0 )
+            updateTip(0.0)
             return
         }
 
@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity() {
         if (binding.roundUpSwitch.isChecked)
             tip = kotlin.math.ceil(tip)
 
-        updateTip( tip )
+        updateTip(tip)
     }
 
     private fun updateTip(tip: Double) {
